@@ -1,0 +1,118 @@
+---
+layout: post
+title:  "Algebraic datatypes in C++17"
+author: "Eleftherios Ioannidis"
+date:   2018-10-28 21:03:36 +0530
+categories: Coq C++
+---
+
+In functional languages, algebraic types are an important part of the user experience and the most complete and minimal way to define data structures. In the 
+Coq proof assistant, the polymorphic list definition is very minimal, here is what it looks like.
+
+```coq
+Inductive list {T} :=
+  | nil: @list T
+  | cons: T -> @list T -> @list T.
+```
+Which tells us everything we need to know about lists;
+They can be empty (nil)
+Or they can hold an element (head) and another list (tail)
+
+The definition of the list as an Inductive tells us it is a sum type (or tagged union), of nil and cons, and every list can be only one of the two at the same time. It would be awesome if we could construct a linked list implementation in C++17 out of the minimal definition seen above. This is what this post is about.
+Let's start by representing the Coq constructors as C structs with their own constructors, Nil uses the default constructor. Notice how we use pointers for recursive typing, as otherwise the C++ typechecker cannot find the inner reference to Cons.
+
+```c++
+template<typename T>
+using Ptr = std::shared_ptr<T>;
+
+struct Nil {};
+
+template<typename T>
+struct Cons {
+    T h;
+    Ptr<std::variant<Nil, Cons<T>>> ts;
+    Cons(T a, Ptr<std::variant<Nil, Cons<T>>> b): h(a) { ts = b; };
+};
+```
+
+A list is a sum type, a relatively new addition to C++. My implementation uses std::variant as a tagged union implementation, here's what the list definition looks like as a type alias.
+
+```c++
+template<typename T>
+using list = std::variant<Nil, Cons<T>>;
+
+template<typename T>
+Ptr<list<T>> nil() {
+    return std::make_shared<list<T>>(Nil());
+}
+
+template<typename T>
+Ptr<list<T>> cons(T a, Ptr<list<T>> b) {
+    return std::make_shared<list<T>>(Cons(a,b));
+}
+```
+
+Nice, now list is indeed declared and I added two bonus constructor functions, that wrap the created type in a shared pointer, to ensure garbage collection happens.
+Now all that's left is generate a match function that can deconstruct a list and run some code on the parts. Here's the full code. The overloaded implementation is borrowed verbatim from [std::visit](https://en.cppreference.com/w/cpp/utility/variant/visit).
+
+```c++
+#include <string>
+#include <iostream>
+#include <variant>
+// Overload functions to a single overloaded definition
+template<class... Ts> struct overloaded : Ts... { using Ts::operator()...; };
+template<class... Ts> overloaded(Ts...) -> overloaded<Ts...>;
+
+template<typename T>
+using Ptr = std::shared_ptr<T>;
+
+struct Nil {};
+
+template<typename T>
+struct Cons {
+    T h;
+    Ptr<std::variant<Nil, Cons<T>>> ts;
+    Cons(T a, Ptr<std::variant<Nil, Cons<T>>> b): h(a) { ts = b; };
+};
+
+template<typename T>
+using list = std::variant<Nil, Cons<T>>;
+
+template<typename T>
+Ptr<list<T>> nil() {
+    return std::make_shared<list<T>>(Nil());
+}
+
+template<typename T>
+Ptr<list<T>> cons(T a, Ptr<list<T>> b) {
+    return std::make_shared<list<T>>(Cons(a,b));
+}
+// Match wrapper around std::visit for more intuitive interface, similar to Coq
+template<typename T, typename Func, typename Func2>
+auto match(Ptr<list<T>> l, Func f, Func2 g) {
+    return std::visit(overloaded {
+            [&](Nil n) { return f(); },
+            [&](Cons<T> c) { return g(c.h, c.ts); }
+            }, *l);
+}
+// Print a list recursively
+template<typename T>
+void print(Ptr<list<T>> l) {
+    match(l,
+        []() { std::cout << "null" << std::endl; },
+        [](T t, Ptr<list<T>> tail){ 
+            std::cout << t << " "; 
+            print(tail); 
+        });
+}
+
+int main() {
+    auto l = cons(3, cons(4, nil<int>()));
+    print(l);
+    return 0;
+}
+```
+
+By using smart pointers we are not leaking any memory, so performance should be comparable to std::list and the same approach can be used to define any algebraic type similar to Coq and Haskell, by taking advantage of the C++ type-checker.
+
+Feel free to leave comments on [Medium](https://medium.com/@elefthei_3157/algebraic-types-in-c-17-b831c10bc22) or contact me on my social media.

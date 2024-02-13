@@ -1,0 +1,74 @@
+title: Eleftherios "Lef" Ioannidis
+author: Lef Ioannidis
+interests: >
+    I am 4th year PhD student in the University of Pennsylvania advised by [Sebastian Angel](https://www.cis.upenn.edu/~sga001/)
+    and [Steve Zdancewic](https://www.cis.upenn.edu/~stevez/). My interests include the reliability, security and privacy of computer systems, both through
+    program verification (Coq, Z3, F\*) and cryptographic zero-knowledge proofs (zkSNARKs), I believe the two approaches are complementary. I will be
+    looking for research scientist jobs starting in 2025, feel free to reach out.
+bio: >
+    Before starting my PhD I worked for 6 years in industry as a Software Engineer ([Bridgewater Associates](https://www.bridgewater.com/), 
+    [Apple](https://www.apple.com/)) and Tech Lead at
+    [UnifyID](https://www.rsaconference.com/library/press-release/unifyid-unanimously-named-rsa-conference-2017s-most). I completed by Bachelor's and 
+    Masters in MIT my thesis advisors were [Frans Kaashoek](http://people.csail.mit.edu/kaashoek/) and 
+    [Nicolai Zeldovich](http://people.csail.mit.edu/nickolai/). I am originally from Thessaloniki, Greece and I like hiking, camping and working out.
+email: elefthei@seas.upenn.edu
+description: Cryptography, Coq, Haskell, Zero-knowledge, zkSNARK, Otti, Reef, PhD, Amazon, AWS, Cedar, Lef, Ioannidis, Eleftherios, MIT, Penn
+show_excerpts: true # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
+plainwhite:
+  name: Eleftherios "Lef" Ioannidis
+  tagline: "PhD student at the University of Pennsylvania"
+  date_format: "%b %-d, %Y"
+  sitemap: true # set to true to generate sitemap.xml content
+  search: false # set to true to enable searchbar
+  dark_mode: true # set to true to add dark mode toggle
+  portfolio_image: "assets/images/me2.jpg" # the path from the base directory of the site to the image to display (no / at the start)
+  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
+  navigation:
+    - title: Publications
+      url: "/publications"
+    - title: Teaching
+      url: "/teaching"
+    - title: Resume
+      url: "/resume"
+  condensed_mobile:
+    #- home
+    - page
+    - post
+  # generate social links in footer
+  social_links:
+    twitter: elefthei
+    github:  elefthei
+    linkedIn: in/elefthei
+    email: elefthei@seas.upenn.edu
+    # orcid: "https://orcid.org/0000-0003-2749-797X"
+    #flickr:   jekyll
+    #instagram: jekyll
+    #pinterest: jekyll
+    #youtube: jekyll
+    #facebook: jekyll
+    #soundcloud: jekyll
+    #gitlab: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Build settings
+theme: plainwhite
+
+plugins:
+  - jekyll-seo-tag
+#  - jekyll-feed
