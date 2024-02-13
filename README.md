@@ -1,4 +1,4 @@
-# Eleftherios "Lef" Ioannidis personal website
+# Lef Ioannidis personal website
 
 About me
 ==========
