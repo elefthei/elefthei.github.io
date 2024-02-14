@@ -6,8 +6,7 @@ date:   2018-10-28 21:03:36 +0530
 categories: Coq C++
 ---
 
-In functional languages, algebraic types are an important part of the user experience and the most complete and minimal way to define data structures. In the 
-Coq proof assistant, the polymorphic list definition is very minimal, here is what it looks like.
+In functional languages, algebraic types are an important part of the user experience and the most complete and minimal way to define data structures. In the Coq proof assistant, the polymorphic list definition is _inductively_ defined, here is what it looks like.
 
 ```coq
 Inductive list {T} :=
