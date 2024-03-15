@@ -6,7 +6,7 @@ title: Lef Ioannidis - Publications
 Publications
 ------------
 
-- _Cedar: A New Language for Expressive, Fast, Safe, and Analyzable Authorization_ [\[extended\]](https://arxiv.org/abs/2403.04651) [\[code\]](https://github.com/cedar-policy/), The Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA) 2024, Pasadena, CA, 2024.
+- _Cedar: A New Language for Expressive, Fast, Safe, and Analyzable Authorization_ [\[extended\]](https://arxiv.org/abs/2403.04651) [\[code\]](https://github.com/cedar-policy/), Proceedings of the ACM on Programming Languages, OOPSLA, 2022. (OOPSLA) 2024, Pasadena, CA, 2024.
 - _Reef: Fast Succinct Non-Interactive Zero-Knowledge Regex Proofs_ [\[eprint\]](https://eprint.iacr.org/2023/1886) [\[code\]](https://github.com/eniac/Reef), USENIX Security, Philadelphia, PA, 2024.
 - _Efficient Representation of Numerical Optimization Problems for SNARKs_   [\[eprint\]](https://eprint.iacr.org/2021/1436.pdf) [\[code\]](https://github.com/eniac/otti), USENIX Security, Boston, MA, 2022.
 - _Normalization-by-evaluation and Metaprogramming with PHOAS_   [\[paper\]](/assets/pdf/popl22src-paper.pdf) [\[video\]](https://www.youtube.com/watch?v=8c-enu_jnK8&list=PLyrlk8Xaylp7z_JBz0PqiuaF1Eb8FB4LR), POPL SRC, Philadelphia, PA, 2022.
