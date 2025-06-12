@@ -6,7 +6,7 @@ title: Lef Ioannidis - Publications
 Publications
 ------------
 
-- _Structural temporal logic for mechanized program verification_ [\[arxiv\]](https://arxiv.org/abs/2410.14906) [\[code\]](https://github.com/vellvm/ticl) (in submission).
+- _Structural temporal logic for mechanized program verification_ [\[arxiv\]](https://arxiv.org/abs/2410.14906) [\[code\]](https://github.com/vellvm/ticl) (OOPSLA, Singapore, 2025).
 - _Choice Trees: Representing and reasoning about nondeterministic, recursive, and impure Programs in Coq_ [\[eprint\]](https://arxiv.org/abs/2211.06863)[\[code\]](https://github.com/vellvm/ctrees/tree/jfp), Journal of Functional Programming, Special POPL 2025 edition (in submission).
 - _Cedar: A New Language for Expressive, Fast, Safe, and Analyzable Authorization_ [\[extended\]](https://arxiv.org/abs/2403.04651) [\[code\]](https://github.com/cedar-policy/), Proceedings of the ACM on Programming Languages, OOPSLA, 2024, Pasadena, CA, 2024.
 - _Reef: Fast Succinct Non-Interactive Zero-Knowledge Regex Proofs_ [\[eprint\]](https://eprint.iacr.org/2023/1886) [\[code\]](https://github.com/eniac/Reef), USENIX Security, Philadelphia, PA, 2024.
