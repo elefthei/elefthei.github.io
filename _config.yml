@@ -1,15 +1,19 @@
 title: Eleftherios "Lef" Ioannidis
 author: Lef Ioannidis
 interests: >
-    I am 5th (final) year PhD student in the University of Pennsylvania advised by [Sebastian Angel](https://www.cis.upenn.edu/~sga001/) and [Steve Zdancewic](https://www.cis.upenn.edu/~stevez/). I work in the reliability, security and privacy of computer systems by combining techniques from formal verification and cryptographic zero-knowledge proofs (zkSNARKs). I believe the two approaches are complementary. I am currently looking for research scientist positions, starting in Fall 2025.
+  Researcher in Programming Languages (PL) and Verification (Proof Assistants), soon-to-be using Large Language Models (LLMs) to verify programs in Microsoft Research's
+  [RiSE group](https://www.microsoft.com/en-us/research/group/research-software-engineering-rise).
 bio: >
-    Before starting my PhD I worked for 5 years in industry as a Software Engineer ([Bridgewater Associates](https://www.bridgewater.com/),
+    I completed my PhD in the University of Pennsylvania advised by [Sebastian Angel](https://www.cis.upenn.edu/~sga001/) and [Steve Zdancewic](https://www.cis.upenn.edu/~stevez/),
+    where I developed Domain-Specific Programming Languages (DSLs) to improve the reliability, security and privacy of computer systems, combining techniques from formal verification
+    and cryptographic protocols.
+    Before starting my PhD I worked in industry as a Software Engineer ([Bridgewater Associates](https://www.bridgewater.com/),
     [Apple](https://www.apple.com/)) and Tech Lead at
     [UnifyID](https://www.rsaconference.com/library/press-release/unifyid-unanimously-named-rsa-conference-2017s-most). I completed by Bachelor's and
-    Masters in MIT my thesis advisors were [Frans Kaashoek](http://people.csail.mit.edu/kaashoek/) and
-    [Nickolai Zeldovich](http://people.csail.mit.edu/nickolai/). I am from Thessaloniki, Greece and I like hiking, snowboarding and camping.
-email: elefthei@seas.upenn.edu
-description: Cryptography, Coq, Haskell, Zero-knowledge, zkSNARK, Otti, Reef, PhD, Amazon, AWS, Cedar, Lef, Ioannidis, Eleftherios, MIT, Penn
+    Masters in MIT and my thesis advisors were [Frans Kaashoek](http://people.csail.mit.edu/kaashoek/) and
+    [Nickolai Zeldovich](http://people.csail.mit.edu/nickolai/). I am from Thessaloniki, Greece and started my academic career at the Aristotle University of Thessaloniki (AUTH).
+email: elefthei@mit.edu
+description: Verification, Rocq, LLM, Logic, Ticl, Zippel, Haskell, Zero-knowledge, zkSNARK, Eleftherios, Ioannidis, MIT, Penn
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -18,7 +22,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Eleftherios "Lef" Ioannidis
-  tagline: "PhD student at the University of Pennsylvania"
+  tagline: "Programming
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: false # set to true to enable searchbar
