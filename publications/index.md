@@ -37,4 +37,5 @@ Term papers
 Patents
 -------
 
-- _Privacy preserving System for Machine-Learning Training Data_, Filed Mar 2, 2018 Patent issuer and number UFID18-1000.
+- _Privacy preserving System for Machine-Learning Training Data_, Filed Mar 2, 2018 Patent numbers US-10601786-B2, US-20180255023-A1.
+- _Authorization Policy Validation_, Filed Nov 28, 2022 Patent number US-12261888-B2.
