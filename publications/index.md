@@ -23,11 +23,8 @@ Tech Conference Talks
 ---------------------
 
 - _Sharing is caring; Centralized PKI and masking for multi-organization blockchain sharing_ [\[paper\]](/assets/pdf/blockchain.pdf), Proposal, UC Berkley blockchain group, San Francisco, CA, 2017.
-
 - _Data-aware NGINX for Distributed Machine Learning_ [\[talk\]](https://www.youtube.com/watch?v=hjObXpM_ezg) [\[code\]](https://github.com/elefthei/WebTorch), Nginxconf 2017 Annual Nginx Developer Conference, September 2017, Portland, OR.
-
 - _Auto-scalable microservices for Machine Learning_ [\[talk\]](https://www.youtube.com/watch?v=f3PfEctffAU) [\[client\]](https://github.com/elefthei/python-ml-microservice) [\[server\]](https://github.com/elefthei/slob-poc), Dockercon 2017 Annual Docker User Conference, April 2017, Austin, TX.
-
 - _Secure and energy-efficient sampling of mobile sensors on iOS and Android_ [\[conference\]](https://www.ece.utexas.edu/plasma/madcon), MadCon 2017 Annual Mobile development student conference, June 2017, Austin, TX.
 
 Term papers
