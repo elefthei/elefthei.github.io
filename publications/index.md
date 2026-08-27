@@ -6,6 +6,7 @@ title: Lef Ioannidis - Publications
 Publications
 ------------
 
+- _Proofs Promptly: Proof-Oriented Programming with AI Agents (Experience Report)_ [\[paper\]](https://dl.acm.org/doi/10.1145/3828709) [\[artifact\]](https://doi.org/10.5281/zenodo.20538205), Proceedings of the ACM on Programming Languages, ICFP, Indianapolis, IN, 2026.
 - _Lazy Validation and Self-Healing for Agentic Programs_ [\[paper\]](https://dl.acm.org/doi/10.1145/3819802.3820582)[\[code\]](https://github.com/microsoft/pact-lang), Proceedings of the ACM on Programming Languages, PAgE, PLDI 2026, Boulder, CO.
 - _Correct Programs, Executed Correctly: Verifying Specifications and Executions_ [\[thesis\]](https://www.proquest.com/openview/8780212a8f1d34836703cfa69c3813ea) (Doctoral Thesis, University of Pennsylvania, 2025).
 - _Structural temporal logic for mechanized program verification_ [\[arxiv\]](https://arxiv.org/abs/2410.14906) [\[code\]](https://github.com/vellvm/ticl) (OOPSLA, Singapore, 2025).
